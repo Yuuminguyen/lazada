@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background:#EAE8E4;
+    padding: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 50px;
+    color:#333;
+    font-weight: bolder;
+    color:blue;
+}
+
+
+header .navbar a{
+    font-size: 23px;
+    padding: 1.5rem;
+    color:#666;
+}
+
+ .navbar a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+header .icons a{
+    font-size: 1.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:black;
+}
+
+
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+section .content-container img {
+    width: 100%;
+}
+
+section .content-container .content {
+    position: absolute;
+    text-align: center;
+    color: black;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 40px;
+}
+
+.btn {
+    height: 56px;
+    font-size: 16px;
+    background-color: orange;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container{
+    background-color: #EAE8E4;
+    margin-bottom: 2rem;
+    border-style: solid;
+}
+
+.beauty-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+section .container .beauty-container img {
+    display: block;
+}
+
+h3 {
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 17px;
+    color: black;
+}
+
+#main-footer {
+    text-align: center;
+    background-color:#EAE8E4 ;
+    padding: 10px;
+    color: black;
+    border-style: solid #333;
+  }
+  
+  .box-quick-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem 0 2rem;
+    line-height: 2rem;
+}
+    
+  
