@@ -9,6 +9,38 @@
     <script src="https://kit.fontawesome.com/f6af0088ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
+        <style>
+        .table {
+            border: 1px solid black;
+        }
+        th {
+            border: 1px solid black;
+
+        }
+    </style>
+<table class="table">
+        <tr>
+            <th></th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr>
+            <th>User</th>
+            <th>user</th>
+            <th>password</th>
+        </tr>
+        <tr>
+            <th>Vendor</th>
+            <th>vendor</th>
+            <th>password</th>
+        </tr>
+        <tr>
+            <th>Shipper</th>
+            <th>shipper</th>
+            <th>password</th>
+        </tr>
+
+    </table>
     <div class="sample">
         <h3>admin account</h3>
             <p class="admin">
