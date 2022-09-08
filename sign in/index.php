@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/f6af0088ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <style>
+    <style>
         .table {
             border: 1px solid black;
         }
@@ -41,13 +41,6 @@
         </tr>
 
     </table>
-    <div class="sample">
-        <h3>admin account</h3>
-            <p class="admin">
-                username: admin <br>
-                password: password
-            </p>
-    </div>
     <div class="container">
         <div class="forms-container">
             <div class="signin-signout">
@@ -68,9 +61,9 @@
                 <form action="" class="sign-up-form">
                     <h2 class="title">Sign up</h2>
                     <div class="roles">
-                        <p><a href="customer.html">Customer</a></p>
-                        <p><a href="vendor.html">Vendor</a></p>
-                        <p><a href="shipper.html">Shipper</a></p>
+                        <p><a href="./customer_login.html">Customer</a></p>
+                        <p><a href="./vendor_login.html">Vendor</a></p>
+                        <p><a href="./shipper_login.html">Shipper</a></p>
                     </div>
                 </form>
             </div>
@@ -105,11 +98,45 @@ if(isset($_POST['submit'])){
     $success = "";
 
     if (isset($_POST["submit"])){
-        if($uname == "admin") {
-            if($pass == "password"){
+        if($uname == "customer") {
+            if($pass == "Password01"){
                 $error = "";
                 $success = "welcome admin";
                 header("location:home.php");
+            }
+            else{
+                $error = "invalid password";
+                $success = "";
+            }
+        }
+        else{
+            $error = "invalid username";
+            $success = "";
+        }
+    }
+    if (isset($_POST["submit"])){
+        if($uname == "vendor") {
+            if($pass == "Password02"){
+                $error = "";
+                $success = "welcome admin";
+                header("location:home.php");
+            }
+            else{
+                $error = "invalid password";
+                $success = "";
+            }
+        }
+        else{
+            $error = "invalid username";
+            $success = "";
+        }
+    }
+    if (isset($_POST["submit"])){
+        if($uname == "shipper") {
+            if($pass == "Password03"){
+                $error = "";
+                $success = "welcome admin";
+                header("location:shipper.html");
             }
             else{
                 $error = "invalid password";
